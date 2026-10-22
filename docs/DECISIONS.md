@@ -21,9 +21,16 @@ Registre aqui cada decisão técnica ou de design, com data e motivo. Não apagu
 ### 2026-10-20 — MVP em paisagem, qualidade com 3 presets manuais
 - **Motivo:** reduzir o escopo do vertical slice. Retrato e qualidade automática ficam para depois.
 
+### 2026-10-21 — Versão da Godot: 4.7.2 estável (Standard, sem .NET)
+- **Resultado:** Godot 4.7.2-stable oficial (Standard). Caminho local no Windows: `C:\Users\Pedro\Desktop\Godot\Godot_v4.7.2-stable_win64_console.exe`. No Codemagic (macOS), será utilizada a mesma versão oficial (4.7.2-stable).
+- **Motivo:** versão estável sem dependência do runtime C#/.NET, viabilizando exportação limpa e direta para iOS via GDScript.
+
+### 2026-10-21 — Renderer inicial do projeto: Compatibility
+- **Resultado:** `project.godot` configurado inicialmente com o renderer `gl_compatibility`.
+- **Motivo:** menor consumo inicial de recursos e maior compatibilidade base; a escolha definitiva entre Compatibility e Mobile no iOS será validada na Etapa 0B com testes no iPhone físico.
+
 ## Decisões em aberto
 
 | Decisão | Prazo | Observação |
 |---|---|---|
-| Versão exata da Godot 4.x | Etapa 0A | Fixar e registrar aqui. Deve ser a mesma no Windows e no Codemagic. |
-| Renderer (Compatibility ou Mobile) | Etapa 0B | Decidir pelo teste no iPhone. |
+| Renderer definitivo no iOS (Compatibility ou Mobile) | Etapa 0B | Decidir após testes reais no iPhone. |

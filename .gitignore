@@ -1,0 +1,14 @@
+# Godot 4.x
+.godot/
+.import/
+*.translation
+
+# Credenciais e segredos de exportação
+export_credentials.cfg
+
+# Saídas de compilação
+/build/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
